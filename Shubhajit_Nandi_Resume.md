@@ -18,7 +18,7 @@ Senior Software Engineer with 10+ years building backend systems and distributed
 
 **Testing & Performance:** Grafana k6, Load Testing, Performance Benchmarking **Observability & Monitoring:** Grafana, distributed tracing, logging, metrics, alerting 
 
-**Databases:** PostgreSQL, MySQL, MongoDB, Redis, Amazon DocumentDB **Telecom:** SMPP, SS7, SCTP, SIP, Asterisk **AI / Voice:** OpenAI GPT-4, Gemini, ElevenLabs, Twilio, LLM-based content generation 
+**Databases:** PostgreSQL, MySQL, MongoDB (replica sets, high availability), Redis, Amazon DocumentDB **Telecom:** SMPP, SS7, SCTP, SIP, Asterisk **AI / Voice:** OpenAI GPT-4, Gemini, ElevenLabs, Twilio, LLM-based content generation 
 
 ## **PRO FES SI ON AL EX PE RI ENC E** 
 
@@ -37,6 +37,8 @@ Senior Software Engineer with 10+ years building backend systems and distributed
 - Built the billing platform with coupon, VAT, and discount logic, integrating PayPal and Stripe for payment processing. 
 
 - Automated infrastructure provisioning and deployments with Terraform, Kubernetes, and GitHub Actions, cutting manual release effort. 
+
+- Implemented MongoDB high availability with a 3-member replica set and automatic failover, reducing risk of single-node database outage for a multi-service Spring Boot SaaS platform. 
 
 - Integrated GPT-4 and Gemini for automated, per-customer phishing email and landing page generation. 
 
