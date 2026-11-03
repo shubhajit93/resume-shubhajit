@@ -7,6 +7,8 @@ Each role has a two-page PDF and matching editable Markdown. The PDFs use a sing
 - 03 DevOps Cloud: deployment and infrastructure roles that value a software engineering background. Official job titles are preserved; this is not a claim of a long-standing SRE title.
 - 04 Distributed Applications: Kafka, messaging, telecom and distributed application roles. Avoid presenting this as specialist consensus/storage engine expertise.
 - 05 Applied AI Backend: production LLM integration and voice applications, not ML research or model training.
+- 06 Senior Full Stack: backend-heavy full-stack roles emphasizing frontend architecture mentoring and API integration.
+- 07 Common Senior Software Engineer: general applications, recruiter introductions, and referrals.
 
 All versions are intended to be recruiter-readable and ATS-compatible. Tailor terminology to each actual job description without adding skills you cannot defend.
 

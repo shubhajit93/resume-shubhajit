@@ -29,7 +29,7 @@ Senior software engineer with 11+ years of experience across telecom, cybersecur
 - Mentored frontend engineers on React and TypeScript micro-frontends, aligning API integration and UI workflows across phishing, billing, and training modules.
 - Built backend APIs for authentication, billing, phishing simulations, notifications, and reporting; integrated Stripe and PayPal payments with coupon, VAT, and discount calculations.
 - Enabled customer-specific phishing email and landing-page generation through LLM integrations with structured outputs, tool calling, timeouts, retries, and rate-limit handling.
-- Built GitHub Actions workflows for frontend asset publishing and backend container deployment, with versioned rollback; manage deployment environments from server setup through releases.
+- Own production operations and DevOps delivery, including development, test, and staging server setup. Build GitHub Actions CI/CD pipelines for frontend asset publishing, backend service deployment, and versioned rollback.
 - Used Grafana k6 to benchmark backend performance under load; maintain production dashboards, logging, alerts, and incident response.
 
 ### Verbex

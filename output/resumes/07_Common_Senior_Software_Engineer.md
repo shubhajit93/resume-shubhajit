@@ -8,7 +8,7 @@ Dhaka, Bangladesh | Remote (UTC+6) | +8801779014069 | shubhajitcse59@gmail.com
 
 ## SUMMARY
 
-Senior software engineer with 11+ years building production systems across telecom, cybersecurity, and voice AI. Lead a five-engineer SaaS team with ownership of backend architecture and cloud delivery. Built a messaging platform handling 3,000 TPS with 90% lower per-message routing costs. Combine Java/Spring Boot development with frontend mentoring, AI integration, and production operations.
+Senior software engineer with 11+ years building production systems across telecom, cybersecurity, and voice AI. Lead a five-engineer SaaS team, owning backend architecture, production operations, and DevOps delivery. Built a messaging platform handling 3,000 TPS with 90% lower per-message routing costs. Combine Java/Spring Boot development with frontend mentoring and AI integration.
 
 ## TECHNICAL SKILLS
 
@@ -28,7 +28,7 @@ Senior software engineer with 11+ years building production systems across telec
 - Lead five engineers delivering ASAT-V2, a security-awareness SaaS platform, owning backend architecture, AWS infrastructure, and production delivery.
 - Reduced JavaScript asset loading time by approximately 50% by moving asset delivery to Amazon S3 and CloudFront.
 - Built Spring Boot services for authentication, phishing simulations, billing, notifications, and reporting; integrated Stripe and PayPal with coupon, VAT, and discount calculations.
-- Provisioned AWS infrastructure with Terraform and automated container builds, deployment, and versioned rollback through GitHub Actions; prepare servers for new deployment environments.
+- Own production infrastructure and DevOps delivery, including development, test, and staging server setup, Terraform provisioning, and GitHub Actions CI/CD pipelines for service deployment and versioned rollback.
 - Integrated OpenAI and Gemini for customer-specific simulation content, implementing structured outputs, tool calling, timeouts, retries, and rate-limit handling.
 - Mentored frontend engineers on micro-frontend design and implementation, aligning backend APIs and UI workflows across phishing, billing, and training modules.
 - Configured a three-member MongoDB replica set with automatic failover for the SaaS platform.

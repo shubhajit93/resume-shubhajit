@@ -8,7 +8,7 @@ Dhaka, Bangladesh | Remote (UTC+6) | +8801779014069 | shubhajitcse59@gmail.com
 
 ## SUMMARY
 
-Senior software engineer with 11+ years in production systems and current ownership of SaaS infrastructure and deployment operations. Prepare deployment environments, provision AWS infrastructure with Terraform, and manage CI/CD, releases, rollback, monitoring, and incident response. Bring hands-on backend development experience to cloud delivery and performance work.
+Senior software engineer with 11+ years in production systems and current ownership of ASAT-V2 production infrastructure and DevOps operations. Manage development, test, staging, and production environments, from server setup and Terraform provisioning to GitHub Actions CI/CD, service deployment, monitoring, and incident response. Combine infrastructure ownership with hands-on backend development.
 
 ## TECHNICAL SKILLS
 
@@ -24,11 +24,11 @@ Senior software engineer with 11+ years in production systems and current owners
 
 **Senior Software Engineer** | Jun 2025 - Present | Remote, Dhaka
 
-- Own deployment environments from server setup through releases, implementing GitHub Actions pipelines for container builds, automated deployments, and versioned rollback.
-- Provisioned AWS infrastructure with Terraform and maintained container deployment configurations using Docker, Docker Compose, and Kubernetes.
+- Own ASAT-V2 production infrastructure and DevOps operations, including server setup, environment configuration, and service deployment across development, test, staging, and production.
+- Build and maintain GitHub Actions CI/CD pipelines for container builds, service deployments, and versioned rollback; provision AWS infrastructure with Terraform and maintain Docker, Docker Compose, and Kubernetes configurations.
 - Reduced JavaScript asset loading time by approximately 50% by moving asset delivery to Amazon S3 and CloudFront.
 - Configured a three-member MongoDB replica set with automatic failover for the SaaS platform.
-- Manage AWS infrastructure, Nginx/TLS, Grafana dashboards, logging, alerting, and production incident response.
+- Operate production services on AWS, maintaining Nginx/TLS, Grafana dashboards, logging, alerts, and incident response.
 - Used Grafana k6 for load testing and performance-metrics analysis of backend services.
 - Lead a five-engineer team delivering ASAT-V2, a security-awareness SaaS platform, owning backend architecture, Spring Boot services, and production delivery.
 

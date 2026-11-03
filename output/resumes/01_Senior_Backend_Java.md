@@ -8,7 +8,7 @@ Dhaka, Bangladesh | Remote (UTC+6) | +8801779014069 | shubhajitcse59@gmail.com
 
 ## SUMMARY
 
-Senior software engineer with 11+ years building backend systems across telecom, cybersecurity, and voice AI. Lead five engineers delivering a Spring Boot SaaS platform, owning backend architecture and cloud delivery. Experience includes Kafka data pipelines, operator payment integrations, and messaging systems handling 3,000 TPS.
+Senior software engineer with 11+ years building backend systems across telecom, cybersecurity, and voice AI. Lead five engineers delivering a Spring Boot SaaS platform, owning backend architecture, production operations, and DevOps delivery. Experience includes Kafka data pipelines, operator payment integrations, and messaging systems handling 3,000 TPS.
 
 ## TECHNICAL SKILLS
 
@@ -28,7 +28,7 @@ Senior software engineer with 11+ years building backend systems across telecom,
 - Reduced JavaScript asset loading time by approximately 50% by moving asset delivery to Amazon S3 and CloudFront.
 - Built Spring Boot services for authentication, billing, phishing simulations, notifications, and reporting; integrated Stripe and PayPal with coupon, VAT, and discount handling.
 - Built LLM content-generation workflows with structured outputs and tool calling, handling timeouts, retries, and rate limits for customer-specific phishing simulations.
-- Own deployment environments from server setup through releases, implementing GitHub Actions pipelines for container builds, automated deployments, and versioned rollback.
+- Own the production environment and DevOps delivery for ASAT-V2. Set up development, test, and staging servers, configure deployment environments, and build GitHub Actions CI/CD pipelines for service deployment and versioned rollback.
 - Mentored frontend engineers on micro-frontend design and implementation, aligning backend APIs and UI workflows across phishing, billing, and training modules.
 - Configured a three-member MongoDB replica set with automatic failover for the SaaS platform.
 

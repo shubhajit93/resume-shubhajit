@@ -8,7 +8,7 @@ Dhaka, Bangladesh | Remote (UTC+6) | +8801779014069 | shubhajitcse59@gmail.com
 
 ## SUMMARY
 
-Senior software engineer with 11+ years of experience and current leadership of a five-engineer SaaS team. Own backend architecture, infrastructure, and production delivery while mentoring frontend engineers on micro-frontends and API integration. Background spans telecom platforms, payment services, voice AI, and security-awareness products.
+Senior software engineer with 11+ years of experience and current leadership of a five-engineer SaaS team. Own backend architecture, production operations, and DevOps delivery while mentoring frontend engineers on micro-frontends and API integration. Background spans telecom platforms, payment services, voice AI, and security-awareness products.
 
 ## TECHNICAL SKILLS
 
@@ -28,9 +28,9 @@ Senior software engineer with 11+ years of experience and current leadership of 
 - Mentored frontend engineers on micro-frontend design and implementation, aligning backend APIs and UI workflows across phishing, billing, and training modules.
 - Reduced JavaScript asset loading time by approximately 50% by moving asset delivery to Amazon S3 and CloudFront.
 - Built Spring Boot services for authentication, billing, phishing simulations, notifications, and reporting; integrated Stripe and PayPal with coupon, VAT, and discount handling.
-- Own deployment environments from server setup through releases, implementing GitHub Actions pipelines for container builds, automated deployments, and versioned rollback.
+- Own the production environment and DevOps delivery for ASAT-V2. Set up development, test, and staging servers, configure deployment environments, and build GitHub Actions CI/CD pipelines for service deployment and versioned rollback.
 - Built LLM content-generation workflows with structured outputs and tool calling, handling timeouts, retries, and rate limits for customer-specific phishing simulations.
-- Manage AWS infrastructure, Nginx/TLS, Grafana dashboards, logging, alerting, and production incident response.
+- Operate production services on AWS, maintaining Nginx/TLS, Grafana dashboards, logging, alerts, and incident response.
 
 ### Verbex
 

@@ -6,9 +6,10 @@ from reportlab.lib.colors import HexColor
 from reportlab.lib.enums import TA_LEFT
 from pypdf import PdfReader
 import subprocess
+import os
 
 ROOT = Path(__file__).resolve().parent
-OUT = ROOT / 'output' / 'resumes'
+OUT = ROOT / 'output' / os.environ.get('RESUME_OUTPUT_FOLDER', 'resumes')
 QA = ROOT / 'tmp' / 'pdfs'
 OUT.mkdir(parents=True, exist_ok=True)
 QA.mkdir(parents=True, exist_ok=True)
@@ -17,13 +18,15 @@ B = {
 'lead': 'Lead a five-engineer team delivering ASAT-V2, a security-awareness SaaS platform, owning backend architecture, Spring Boot services, and production delivery.',
 'cdn': 'Reduced JavaScript asset loading time by approximately 50% by moving asset delivery to Amazon S3 and CloudFront.',
 'backend': 'Built Spring Boot services for authentication, billing, phishing simulations, notifications, and reporting; integrated Stripe and PayPal with coupon, VAT, and discount handling.',
-'deploy': 'Own deployment environments from server setup through releases, implementing GitHub Actions pipelines for container builds, automated deployments, and versioned rollback.',
+'deploy': 'Own the production environment and DevOps delivery for ASAT-V2. Set up development, test, and staging servers, configure deployment environments, and build GitHub Actions CI/CD pipelines for service deployment and versioned rollback.',
 'ai': 'Built LLM content-generation workflows with structured outputs and tool calling, handling timeouts, retries, and rate limits for customer-specific phishing simulations.',
 'aiops': 'Manage latency, token cost, caching, and tracing for AI integrations in ASAT-V2.',
 'mentor': 'Mentored frontend engineers on micro-frontend design and implementation, aligning backend APIs and UI workflows across phishing, billing, and training modules.',
 'k6': 'Used Grafana k6 for load testing and performance-metrics analysis of backend services.',
 'mongo': 'Configured a three-member MongoDB replica set with automatic failover for the SaaS platform.',
-'ops': 'Manage AWS infrastructure, Nginx/TLS, Grafana dashboards, logging, alerting, and production incident response.',
+'ops': 'Operate production services on AWS, maintaining Nginx/TLS, Grafana dashboards, logging, alerts, and incident response.',
+'devops_owner': 'Own ASAT-V2 production infrastructure and DevOps operations, including server setup, environment configuration, and service deployment across development, test, staging, and production.',
+'devops_pipeline': 'Build and maintain GitHub Actions CI/CD pipelines for container builds, service deployments, and versioned rollback; provision AWS infrastructure with Terraform and maintain Docker, Docker Compose, and Kubernetes configurations.',
 'infra': 'Provisioned AWS infrastructure with Terraform and maintained container deployment configurations using Docker, Docker Compose, and Kubernetes.',
 'voice': 'Built email, SMS, and voice phishing simulations, integrating Twilio and ElevenLabs and capturing participant responses for security-awareness risk reporting.',
 }
@@ -50,17 +53,17 @@ common = [
 
 versions = [
 dict(slug='01_Senior_Backend_Java', title='Senior Backend Engineer | Java, Spring Boot, AWS',
- summary='Senior software engineer with 11+ years building backend systems across telecom, cybersecurity, and voice AI. Lead five engineers delivering a Spring Boot SaaS platform, owning backend architecture and cloud delivery. Experience includes Kafka data pipelines, operator payment integrations, and messaging systems handling 3,000 TPS.',
+ summary='Senior software engineer with 11+ years building backend systems across telecom, cybersecurity, and voice AI. Lead five engineers delivering a Spring Boot SaaS platform, owning backend architecture, production operations, and DevOps delivery. Experience includes Kafka data pipelines, operator payment integrations, and messaging systems handling 3,000 TPS.',
  skills=common+[('Architecture & Integrations','Microservices, event-driven architecture, CQRS, Axon Framework, LLM APIs, Stripe, PayPal')],
  aspire=['lead','cdn','backend','ai','deploy','mentor','mongo'], verbex=['pipeline','plugin','java','deploy'], dots=['sms','pay','call']),
 dict(slug='02_Technical_Lead', title='Senior Software Engineer | Backend Architecture & Technical Leadership',
- summary='Senior software engineer with 11+ years of experience and current leadership of a five-engineer SaaS team. Own backend architecture, infrastructure, and production delivery while mentoring frontend engineers on micro-frontends and API integration. Background spans telecom platforms, payment services, voice AI, and security-awareness products.',
+ summary='Senior software engineer with 11+ years of experience and current leadership of a five-engineer SaaS team. Own backend architecture, production operations, and DevOps delivery while mentoring frontend engineers on micro-frontends and API integration. Background spans telecom platforms, payment services, voice AI, and security-awareness products.',
  skills=common+[('Technical Leadership','Team leadership, backend architecture, frontend mentoring, cross-stack integration, micro-frontends, event-driven systems')],
  aspire=['lead','mentor','cdn','backend','deploy','ai','ops'], verbex=['java','pipeline','plugin','sip'], dots=['sms','pay','call']),
 dict(slug='03_DevOps_Cloud', title='Senior Software Engineer | DevOps & Cloud Infrastructure',
- summary='Senior software engineer with 11+ years in production systems and current ownership of SaaS infrastructure and deployment operations. Prepare deployment environments, provision AWS infrastructure with Terraform, and manage CI/CD, releases, rollback, monitoring, and incident response. Bring hands-on backend development experience to cloud delivery and performance work.',
+ summary='Senior software engineer with 11+ years in production systems and current ownership of ASAT-V2 production infrastructure and DevOps operations. Manage development, test, staging, and production environments, from server setup and Terraform provisioning to GitHub Actions CI/CD, service deployment, monitoring, and incident response. Combine infrastructure ownership with hands-on backend development.',
  skills=[('Cloud & Infrastructure','AWS EC2, EKS, S3, CloudFront, ECR, Terraform, Nginx, TLS'),('Containers & Delivery','Docker, Docker Compose, Kubernetes, GitHub Actions, CI/CD, versioned rollback'),('Reliability & Performance','MongoDB replica sets, Grafana, Grafana k6, load testing, logging, alerting, incident response'),('Languages & Services','Java, Python, C, Spring Boot, FastAPI'),('Messaging & Databases','Kafka, Kafka Connect, NATS JetStream, AWS SQS, MongoDB, PostgreSQL, MySQL, Redis')],
- aspire=['deploy','infra','cdn','mongo','ops','k6','lead'], verbex=['deploy','pipeline','plugin','java'], dots=['sms','call','pay']),
+ aspire=['devops_owner','devops_pipeline','cdn','mongo','ops','k6','lead'], verbex=['deploy','pipeline','plugin','java'], dots=['sms','call','pay']),
 dict(slug='04_Distributed_Applications', title='Senior Backend Engineer | Distributed Applications & Messaging',
  summary='Senior backend engineer with 11+ years across messaging, telecom protocols, payment services, and SaaS platforms. Built an SMSC handling 3,000 TPS and Kafka data pipelines that reduced processing latency by approximately 50%. Current work includes Spring Boot architecture, cloud delivery, and leadership of a five-engineer team.',
  skills=[('Backend & Architecture','Java, Python, C, Spring Boot, FastAPI, microservices, event-driven architecture, CQRS, Axon Framework'),('Messaging & Pipelines','Apache Kafka, Kafka Connect, NATS JetStream, AWS SQS'),('Data & Availability','PostgreSQL, MySQL, MongoDB replica sets, Redis'),('Cloud & Operations','AWS, Terraform, Docker, Kubernetes, GitHub Actions, Grafana, Grafana k6'),('Telecom & Voice','SMPP, SS7, SCTP, SIP, Asterisk, LiveKit, Twilio')],
@@ -150,6 +153,8 @@ Each role has a two-page PDF and matching editable Markdown. The PDFs use a sing
 - 03 DevOps Cloud: deployment and infrastructure roles that value a software engineering background. Official job titles are preserved; this is not a claim of a long-standing SRE title.
 - 04 Distributed Applications: Kafka, messaging, telecom and distributed application roles. Avoid presenting this as specialist consensus/storage engine expertise.
 - 05 Applied AI Backend: production LLM integration and voice applications, not ML research or model training.
+- 06 Senior Full Stack: backend-heavy full-stack roles emphasizing frontend architecture mentoring and API integration.
+- 07 Common Senior Software Engineer: general applications, recruiter introductions, and referrals.
 
 All versions are intended to be recruiter-readable and ATS-compatible. Tailor terminology to each actual job description without adding skills you cannot defend.
 

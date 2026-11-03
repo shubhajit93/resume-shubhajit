@@ -29,7 +29,7 @@ Senior backend engineer with 11+ years across telecom, cybersecurity, and voice 
 - Manage latency, token cost, caching, and tracing for AI integrations in ASAT-V2.
 - Built email, SMS, and voice phishing simulations, integrating Twilio and ElevenLabs and capturing participant responses for security-awareness risk reporting.
 - Reduced JavaScript asset loading time by approximately 50% by moving asset delivery to Amazon S3 and CloudFront.
-- Own deployment environments from server setup through releases, implementing GitHub Actions pipelines for container builds, automated deployments, and versioned rollback.
+- Own the production environment and DevOps delivery for ASAT-V2. Set up development, test, and staging servers, configure deployment environments, and build GitHub Actions CI/CD pipelines for service deployment and versioned rollback.
 - Mentored frontend engineers on micro-frontend design and implementation, aligning backend APIs and UI workflows across phishing, billing, and training modules.
 
 ### Verbex
