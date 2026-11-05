@@ -12,7 +12,7 @@ Senior software engineer with 11+ years building production systems across SaaS,
 
 ## TECHNICAL SKILLS
 
-**Java & APIs:** Java (including Java 21), Spring Boot, Spring Cloud, Hibernate, REST APIs, Gradle, Jackson  
+**Java & APIs:** Java (including Java 21), Spring Boot, Spring Cloud, Hibernate, REST API design, API gateways, Gradle, Jackson  
 **Architecture & Messaging:** Microservices, distributed applications, event-driven architecture, Apache Kafka, Kafka Connect, CQRS, Axon Framework, NATS JetStream  
 **Cloud & Delivery:** AWS, Kubernetes, Docker, Docker Compose, Terraform, GitHub Actions, CI/CD  
 **Data:** PostgreSQL, MySQL, MongoDB replica sets, Redis  
@@ -27,6 +27,7 @@ Senior software engineer with 11+ years building production systems across SaaS,
 
 - Lead five engineers delivering ASAT-V2, a security-awareness SaaS platform, owning backend architecture and delivery from Spring Boot development through production operations.
 - Built Spring Boot REST APIs for authentication, billing, phishing simulations, notifications, and reporting; integrated Stripe and PayPal with coupon, VAT, and discount calculations.
+- Designed the API gateway and campaign orchestration across email, SMS, and voice simulations, integrating delivery providers and capturing participant responses for risk reporting.
 - Own production infrastructure and DevOps operations, including development, test, and staging server setup, deployment environment preparation, and service releases.
 - Maintain GitHub Actions CI/CD pipelines for Gradle builds, container deployment, and versioned rollback; the backend deployment workflow includes unit, integration, and functional test stages.
 - Operate services on AWS with Grafana dashboards, logging, alerts, and incident response; use Grafana k6 for load testing and performance analysis.
